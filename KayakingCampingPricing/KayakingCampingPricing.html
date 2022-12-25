@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KayakingCampingPricing </title>
+	<link rel="stylesheet" href="CSS/KayakingCampingPricing.css">
+	<script src="https://kit.fontawesome.com/2c3103d0c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="main">
+	<div class="buttons">
+		<button id="kayaking-button" onclick="getKayakingCard('camp-card','kayaking-card')" >Kayaking</button>
+		<button id="camping-button" onclick="getCampingCard('kayaking-card','camp-card')">Camping</button>
+	</div>
+ <!-- container card -->
+ <div class="container">
+	<!-- cover card -->
+	<div class="main-card">
+		<!-- kayaking card -->
+		<div class="kayaking-card" id="kayaking-card">
+			<div class="kayaking-images">
+				<img class="kayaking" src="imgs/kayaking.png" >
+			</div>
+			<div class="kayaking-sport-name">
+				<div class="kayaking-circle">
+				<div class="kayaking-sport-text">Kayaking</div>
+				</div>
+			</div>
+			<div class="kayaking-detail"><sup>$</sup>39 / 4<sup>hrs</sup></div>
+			<div class="kayaking-little-detail" >per person</div>
+			<div class="kayaking-location"><i class="fa-solid fa-map-location-dot"></i><br>Kastamonu,Turkey</div>
+			<div class="kayaking-button-div"><button class="kayaking-kykbutton">Choose Date</button></div>
+		</div>
+		<!-- camping card -->
+		<div class="camp-card" id="camp-card">
+			<div class="camp-images">
+				<img class="camp" id="camp" src="imgs/camping.png" >
+				<img class="fire" id="fire" src="imgs/fire.png" >
+			</div>
+			<div class="camp-sport-name">
+				<div class="camp-circle">
+				<div class="camp-sport-text">Camping</div>
+				</div>
+			</div>
+			<div class="camp-detail"><sup>$</sup>29 / 8<sup>hrs</sup></div>
+			<div class="camp-little-detail" >per person</div>
+			<div class="camp-location"><i class="fa-solid fa-map-location-dot"></i><br>İstanbul,Turkey</div>
+			<div class="camp-button-div"><button class="camp-kykbutton">Choose Date</button></div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="JavaScript/KayakingCampingPricing.js"></script>
+</body>
+</html>
+

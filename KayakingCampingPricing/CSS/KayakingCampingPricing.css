@@ -1,0 +1,245 @@
+body{
+	position:relative;
+	height:90vh;
+}
+.main{
+	position:absolute;
+	height:600px;
+	width:75%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.container{
+	position:absolute;
+	height:450px;
+	width:75%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+/*Kayaking+Camping Card*/
+.main-card{
+	position:relative;
+	height:100%;
+	width:35%;
+	margin:auto;		
+}
+/*Kano Card*/
+.kayaking-card{
+	border-radius:15px;
+	height:100%;
+	width:100%;
+	box-shadow:4px 7px 12px 1px #bababa;
+	position:absolute;
+	background-color:white;
+	transition:1s;
+}
+.kayaking-images{
+	position:relative;
+	border-radius:15px 15px 0px 0px;
+	height:24%;
+	background-image: url("../imgs/wave.png");
+	background-size: 100% 100%;
+}
+.kayaking{
+	position:absolute;
+	width:265px;
+	height:300px;
+	top:-120px;
+	left:-70px;
+	transition:3s;
+}
+.kayaking-sport-name{
+	position:relative;
+	height:20%;
+}
+.kayaking-circle{
+	position:absolute;
+	height:70px;
+	width:70px;
+	border-radius:50%;
+	background-image: radial-gradient(white,turquoise);
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.kayaking-sport-text{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-size:30px;
+}
+.kayaking-detail{
+	padding-top:20px;
+	text-align:center;
+	font-size:30px;
+}
+.kayaking-little-detail{
+	text-align:center;
+	color:grey;
+}
+.kayaking-location{
+	text-align:center;
+	padding-top:20px;
+	font-size:26px;
+}
+.kayaking-button-div{
+	height:19%;
+	text-align:center;
+	padding-top:25px;
+	box-sizing:border-box;
+}
+.kayaking-kykbutton{
+	background-color:darkblue;
+	height:30px;
+	width:120px;
+	border:none;
+	color:white;
+}
+/*Camping Card*/
+.camp-card{
+	border-radius:15px;
+	height:100%;
+	box-shadow:4px 7px 12px 1px #bababa;
+	position:absolute;
+	width:100%;
+	background-color:white;
+	z-index:-1;
+	opacity:0;
+	transition:1s;
+	transform:rotateY(180deg);
+}
+.camp-images{
+	border-radius:15px 15px 0px 0px;
+	height:24%;
+	background-image: url("../imgs/grass.png");
+	background-size: 100% 100%;
+	position:relative;
+}
+.camp{
+	width:200px;
+	height:255px;
+	position:absolute;
+	top:-110px;
+	left:-50px;
+	transform:scale(0,0);
+	transition:3s;
+}
+.fire{
+	width:150px;
+	height:150px;
+	position:absolute;
+	top:-30px;
+	right:-20px;
+	transform:scale(0,0);
+	transition:3s;
+}
+.camp-sport-name{
+	height:20%;
+	position:relative;
+}
+.camp-circle{
+	height:70px;
+	width:70px;
+	border-radius:50%;
+	background-image: radial-gradient(white,green);
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.camp-sport-text{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-size:30px;
+}
+.camp-detail{
+	padding-top:20px;
+	text-align:center;
+	font-size:30px;
+}
+.camp-little-detail{
+	text-align:center;
+	color:grey;
+}
+.camp-location{
+	text-align:center;
+	padding-top:20px;
+	font-size:26px;
+}
+.camp-button-div{
+	height:19%;
+	text-align:center;
+	padding-top:25px;
+	box-sizing:border-box;
+}
+.camp-kykbutton{
+	background-color:green;
+	height:30px;
+	width:120px;
+	border:none;
+	color:white;
+}
+/* 
+//Hover yerine js ile buton eklendi.
+.main-card:hover .kayaking-card{
+	transform:rotateY(180deg);
+	opacity:0;
+}
+.main-card:hover .camp-card{
+	transform:rotateY(360deg);
+	opacity:1;
+}
+.main-card:hover .kayaking{
+	top:-180px;
+	left:10px;
+}
+.main-card:hover .camp{
+	transform:scale(1,1);
+}
+.main-card:hover .fire{
+	transform:scale(1,1);
+} */
+.buttons{
+	display: inline-block;
+	position:absolute;
+	top:550px;
+	left: 447px;
+}
+button{
+	width: 140px;
+	height: 40px;
+	cursor: pointer;
+	background-color: rgb(164, 54, 255);
+	border-radius: 10px;
+}
+#kayaking-button:hover{
+	background-color: darkblue;
+	color: white;
+	font-weight: bold;
+}
+#camping-button:hover{
+	background-color: rgb(22, 53, 22);
+	color: white;
+	font-weight: bold;
+}
+.kayaking-kykbutton:hover{
+	background-color: rgb(57, 57, 248);
+	color: white;
+}
+.camp-kykbutton:hover{
+	background-color: rgb(25, 192, 25);
+	color: white;
+}
+
+
+
+
+
+
+
+
